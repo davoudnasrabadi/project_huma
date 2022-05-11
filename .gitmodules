@@ -1,0 +1,6 @@
+[submodule "gateway"]
+	path = gateway
+	url = https://github.com/davoudnasrabadi/gateway
+[submodule "microservice"]
+	path = microservice
+	url = https://github.com/davoudnasrabadi/microservice
