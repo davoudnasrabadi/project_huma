@@ -1,0 +1,18 @@
+version: '1'
+services:
+    gateway:
+       build: 
+         context: "./gateway"
+    ports:
+       - 3000:3000
+    microservice:
+       build:
+          context: "./microservice"
+       depends_on:
+          - postgres
+    postgres:
+       container_name: postgres
+       image:postgres: latest
+       expose:
+          "5432"
+ 
